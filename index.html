@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/page.css">
+</head>
+<body>
+    
+    <div class="userSelectBg" id="userEditContainer">
+
+        <div class="promptUsername">
+            <p class="titlePromptUsername">Personalize seu perfil</p>
+
+            <img class="iconePromptUser" src="assets/pfps/default.png" alt="">
+        
+            <div class="groupInput1">
+                <p class="labelUsername">Nome de usuário (@usuario)</p>
+                <input class="usernameInput" id="usernameID" type="text" placeholder="Escolha um nome de usuário">
+            </div>
+            <div class="groupInput1">
+                <p class="labelUsername">Nome de exibição</p>
+                <input class="usernameInput" id="nomeUsuario" type="text" placeholder="Escolha um nome de exibição">
+            </div>
+        
+            <div class="containerButtonPrompt">
+                <button class="buttonSaveUsername" onclick="saveEdit()">Salvar</button>
+            </div>
+        </div>
+
+    </div>
+
+<main>
+
+    <div class="servidoresNav">
+        
+            <img src="assets/images/logoNavServers.png" class="serversTab-AppIcon" alt="">
+        
+            <hr class="appIconSeparator">
+
+            <div class="grupoServidores">
+                <div class="selectedServer">
+                    <div class="markerServer"></div>
+                    <img src="assets/images/ADS senai.jpeg" class="serverIcon" alt="">
+                    <div class="serverNameBallon">ADS Senai</div>
+                </div>
+            </div>
+
+            <div class="grupoAdicionar">
+
+                <div class="adicionarServidor">
+                    <div class="addButton">
+                        <div class="buttonBackground">
+                            <img src="assets/images/plus.png" class="btnImg" alt="">
+                        </div>
+                        <div class="addNameBallon">Adicionar um servidor</div>
+                    </div>
+
+                    <div class="addButton">
+                        <div class="buttonBackground2">
+                            <img src="assets/images/compass-icon.png" class="btnImg2" alt="">
+                        </div>
+                        <div class="addNameBallon2">Descubra</div>
+                    </div>
+
+                </div>
+
+            </div>
+    </div>
+
+    <div class="serverMenuPrincipal">
+
+        <div class="serverName">
+            <p class="nomeServidor">ADS Senai</p>
+        </div>
+        <div class="serverCategory">
+            <img src="assets/images/arrowDown.png" class="categoryArrow" alt=""> <p class="categoryName">CANAIS DE TEXTO</p> <img class="categoryCreate" src="assets/images/plus2.png" alt="">
+        </div>
+        <div class="serverChannels">
+            <img src="assets/images/hash.png" class="channelHash" alt=""> <p class="channelName">chat-geral</p> <img class="channelInvite" src="assets/images/add-group.png" alt="">
+        </div>
+
+        <div class="serverChannels2">
+            <img src="assets/images/hash.png" class="channelHash" alt=""> <p class="channelName2">respostas-licoes</p>
+        </div>
+
+        <div class="serverChannels2">
+            <img src="assets/images/hash.png" class="channelHash" alt=""> <p class="channelName2">tcc-pra-ontem</p>
+        </div>
+
+        <!-- <div class="frameProfileEdit">
+            
+        </div> -->
+
+        <div class="profileBarMenu">
+            <div class="containerProfileInfos">
+                <div class="profileImageBarMenu">
+                    <img class="iconPfp" src="assets/pfps/default.png" alt=""> <div class="status"></div>
+                </div>
+                <div class="namesProfileBox">
+                    <p class="displayName" id="displayName">Felipe</p>
+                    <p class="username" id="userName">felipe.07</p>
+                </div>
+            </div>
+
+            <div class="containerSoundIcons">
+                <div class="iconSound"><img class="soundImg" src="assets/images/mic.png" alt=""></div>
+                <div class="iconSound"><img class="soundImg2" src="assets/images/headset.png" alt=""></div>
+                <div class="iconSound"><img class="soundImg2" src="assets/images/settings.png" alt=""></div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="containerPrincipal">
+        <div class="topPrincipal">
+            <img class="iconServerNameTop" src="assets/images/hash.png" alt=""> <p class="serverNameTop">chat-geral</p>
+        </div>
+
+        <div class="messagesContainer" id="messagesContainer">
+        </div>
+
+        <div class="sendMessageContainer">
+            <div class="fundoInput">
+                <img src="assets/images/plus3.png" class="iconInputMessages" alt="">
+                <form id="chatForm">
+                    <!-- <input id="nome" placeholder="Seu nome de usuário" autocomplete="off" /> -->
+                    <input id="mensagem" type="text" class="inputMessages" placeholder="Conversar em #chat-geral" autocomplete="off">
+                </form>
+                <div class="iconsMessageContainer">
+                    <img src="assets/images/gift.png" class="iconInputMessages2" alt="">
+                    <img src="assets/images/gif.png" class="iconInputMessages2" alt="">
+                    <img src="assets/images/sticker.png" class="iconInputMessages2" alt="">
+                    <img src="assets/images/emoji.png" class="iconInputMessages3" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</main>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="javascript/messages.js"></script>
+<script src="javascript/script.js"></script>
+</body>
+</html>

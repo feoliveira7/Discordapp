@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "app": "^0.1.0",
+    "express": "^4.21.2",
+    "http": "^0.0.1-security",
+    "io": "^1.5.3",
+    "node.js": "^0.0.1-security",
+    "path": "^0.12.7",
+    "socket": "^0.14.43",
+    "socket.io": "^4.8.1"
+  }
+}
